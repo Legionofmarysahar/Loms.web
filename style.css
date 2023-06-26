@@ -52,12 +52,12 @@ header .navbar .logo {
 header .navbar .logo .nav-logo {
   text-decoration: none;
   color: #000000;
+  cursor: pointer;
 }
 
 header .navbar .logo .nav-logo img {
   width: 6rem;
   height: auto;
-
 }
 
 header .navbar .title {
@@ -89,6 +89,7 @@ header .navbar .nav-menu .nav-item {
 header .navbar .nav-menu .nav-item .nav-link {
   font-size: 1.6rem;
   font-weight: 400;
+  cursor: pointer;
 }
 
 header .navbar .nav-menu .nav-item .nav-link:hover {
@@ -109,20 +110,15 @@ header .navbar .nav-menu .nav-item .nav-link:hover {
   background-color: #101010;
 }
 
-
-
-
-
-
 @media only screen and (max-width: 768px) {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 5rem;
+    top: 8rem;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     text-align: center;
     transition: 0.3s;
     box-shadow:
