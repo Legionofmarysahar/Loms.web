@@ -1,0 +1,178 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display SC', serif;
+}
+
+/* Preset */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #F8F6F4;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+li {
+  list-style: none;
+}
+
+/* Styling */
+.header {
+  border-bottom: 1px solid #E2E8F0;
+  width: 100%;
+  position: fixed;
+}
+
+.header .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: #FFFFFF;
+}
+
+.header .navbar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header .navbar .logo a {
+  border-radius: 50%;
+}
+
+.header .navbar .logo a img {
+  width: auto;
+  height: 10rem;
+}
+
+.header .navbar .logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: left;
+}
+
+.header .navbar .logo-text .logo-text-main a {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.header .navbar .logo-text .logo-text-main a h3 {
+  font-size: 3.3rem;
+}
+
+.header .navbar .logo-text .logo-text-sub a {
+  color: #363636;
+  cursor: pointer;
+}
+
+.header .navbar .logo-text .logo-text-sub a p {
+  font-size: 2.2rem;
+}
+
+.header .navbar .nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .navbar .nav-menu .nav-item {
+  margin-left: 5rem;
+}
+
+.header .navbar .nav-menu .nav-item .nav-link {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #475569;
+  cursor: pointer;
+}
+
+.header .navbar .nav-menu .nav-item .nav-link:hover {
+  color: #482ff7;
+  font-weight: bolder;
+  font-size: 2.2rem;
+}
+
+.header .navbar .hamburger {
+  display: none;
+}
+
+.header .navbar .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+@media only screen and (max-width: 768px) {
+  .header .navbar .logo a img {
+    width: auto;
+    height: 5rem;
+  }
+
+  .header .navbar .logo-text .logo-text-main a h3 {
+    font-size: 1.7rem;
+  }
+
+  .header .navbar .logo-text .logo-text-sub a p {
+    font-size: 1.2rem;
+  }
+
+  .header .navbar .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 7rem;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:
+      0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .header .navbar .nav-menu.active {
+    left: 0;
+  }
+
+  .header .navbar .nav-menu .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .header .navbar .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .header .navbar .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .header .navbar .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .header .navbar .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
