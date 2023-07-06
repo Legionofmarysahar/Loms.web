@@ -1,12 +1,13 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 /* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Playfair Display', serif;
 }
 
 /* Preset */
@@ -15,7 +16,9 @@ html {
 }
 
 body {
+  font-family: 'Playfair Display', serif;
   background: #F8F6F4;
+  transition: 2s;
 }
 
 a {
@@ -33,6 +36,7 @@ li {
   border-bottom: 1px solid #E2E8F0;
   width: 100%;
   position: fixed;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .header .navbar {
@@ -169,13 +173,91 @@ li {
   opacity: 0.7;
 }
 
+.content .about {
+  width: 100%;
+  height: 100vh;
+  background: #FFFFFF;
+}
+
+.content .legion {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #E2E8F0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+footer div {
+  background: #FFFFFF;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #B8B8B8;
+}
+
+footer div .foott {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+footer div hr {
+  outline: none;
+  border: 2px solid #B8B8B8;
+  width: 35%;
+}
+
+footer div p {
+  font-size: 1.3rem;
+}
+
+footer div .mail {
+  margin-top: 0.7rem;
+  cursor: pointer;
+}
+
+footer div ul {
+  display: flex;
+}
+
+footer div ul .link {
+  cursor: pointer;
+  margin-top: 0.3rem;
+}
+
+.link1 {
+  padding-right: 0.7rem;
+}
+
+.linkall {
+  font-size: 1rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+footer h3 {
+  background: #FFFFFF;
+  width: 100%;
+  padding: 0.5rem;
+}
+
 /* Media query */
 @media only screen and (max-width: 768px) {
   .header .navbar .logo a img {
     width: auto;
     height: 5rem;
   }
-  
+
   .header .navbar .logo-text {
     text-align: center;
   }
