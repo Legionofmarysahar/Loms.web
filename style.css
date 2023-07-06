@@ -309,4 +309,9 @@ footer h3 {
     -webkit-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg);
   }
+  
+  
+  footer div p strong br {
+    display: none;
+  }
 }
