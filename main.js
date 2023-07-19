@@ -40,3 +40,8 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+// back to top
+function backtotop() {
+   window.scrollTo(0, 0);
+}
