@@ -230,7 +230,11 @@ li {
 }
 
 .content .home .welcome h3 {
-  font-size: 4rem;
+  font-size: 3rem;
+}
+
+.content .home .welcome .weltext {
+  font-size: 1.7rem;
 }
 
 .content .home .welcome .weldwn {
@@ -257,8 +261,23 @@ li {
 }
 
 .content .legion {
-  /* width: 100%;
-  height: 100vh;*/
+  width: 100%;
+}
+
+.content .legion hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+.content .legion h3 {
+  font-size: 3rem;
+  padding: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  border-bottom: 2px double #5D5D5D;
 }
 
 /* Footer */
