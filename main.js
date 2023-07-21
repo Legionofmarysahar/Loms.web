@@ -1,11 +1,10 @@
+// back to top
+function backtotop() {
+  window.scrollTo(0, 0);
+}
+
 // Preloader
-// $(document).ready(function(){
-// 	$('div#loading').removeAttr('id');
-// });
 var preloader = document.getElementById("loading");
-// window.addEventListener('load', function(){
-// 	preloader.style.display = 'none';
-// 	})
 
 function myFunction() {
   preloader.style.display = 'none';
@@ -39,9 +38,4 @@ window.onscroll = function() {
     document.getElementById("navbar").style.top = "-125px";
   }
   prevScrollpos = currentScrollPos;
-}
-
-// back to top
-function backtotop() {
-   window.scrollTo(0, 0);
 }
