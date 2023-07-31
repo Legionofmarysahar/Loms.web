@@ -18,7 +18,7 @@ html {
 
 body {
   font-family: 'Playfair Display', serif;
-  background: #F8F6F4;
+  background: #F6F4EB;
   transition: all 2s;
 }
 
@@ -63,46 +63,30 @@ li {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #fff url('http://garudapr.in/wp-content/uploads/2017/12/loader.gif') no-repeat center center;
   z-index: 99999;
   display: grid;
   place-items: center;
+  background: #FFFFFF;
 }
 
 .loader {
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
+  border: 5px dotted #7D7D7D;
+  border-radius: 50%;
+  display: inline-block;
   position: relative;
-  border-radius: 50%;
-  color: #E2E8F0;
-  animation: fill 1s ease-in infinite alternate;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
 }
 
-.loader::before,
-.loader::after {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  left: 48px;
-  top: 0;
-  animation: fill 0.9s ease-in infinite alternate;
-}
-
-.loader::after {
-  left: auto;
-  right: 48px;
-  animation-duration: 1.1s;
-}
-
-@keyframes fill {
+@keyframes rotation {
   0% {
-    box-shadow: 0 0 0 2px inset
+    transform: rotate(0deg);
   }
 
   100% {
-    box-shadow: 0 0 0 10px inset
+    transform: rotate(360deg);
   }
 }
 
@@ -158,7 +142,6 @@ li {
 }
 
 .header .navbar .logo-text .logo-text-sub a {
-  color: #363636;
   cursor: pointer;
 }
 
@@ -173,20 +156,20 @@ li {
 }
 
 .header .navbar .nav-menu .nav-item {
-  margin-left: 5rem;
+  margin-left: 2rem;
 }
 
 .header .navbar .nav-menu .nav-item .nav-link {
   font-size: 1.7rem;
   font-weight: 400;
-  color: #475569;
   cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 0.7rem;
 }
 
 .header .navbar .nav-menu .nav-item .nav-link:hover {
-  color: #482ff7;
-  font-weight: bolder;
-  text-transform: uppercase;
+  color: #5361FF;
 }
 
 .header .navbar .hamburger {
@@ -227,6 +210,9 @@ li {
   width: 100%;
   padding: 2rem;
   color: #FFFFFF;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .content .home .welcome h3 {
@@ -244,6 +230,14 @@ li {
   align-items: center;
 }
 
+.hide2 {
+  display: none !important;
+}
+
+.hide {
+  display: block !important;
+}
+
 .content .home .welcome .weldwn img {
   filter: invert(100%);
   opacity: 0.7;
@@ -255,22 +249,63 @@ li {
 }
 
 .content .about {
-  /* width: 100%;
-  height: 100vh;*/
+  width: 100%;
+}
+
+.content .about .ah3 {
+  font-size: 3rem;
+}
+
+.content .about .ap {
+  font-size: 1.7rem;
+  font-style: italic;
+  padding: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  border-bottom: 2px double #5D5D5D;
+}
+
+.content .about .aboutbox {
+  margin: 0.5rem;
   background: #FFFFFF;
+  padding: 0.5rem;
+  border: 2px solid #000000;
+  border-radius: 7px;
+}
+
+.content .about .aboutbox img {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px, rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  margin: 1.2rem;
+  border-radius: 5px;
+  width: 90%;
+  height: 50%;
+}
+
+.content .about .aboutbox .about-text {
+  margin: 0rem 1.5rem;
+  height: 50%;
+  overflow: scroll;
+}
+
+.content .about .aboutbox .about-text .abp {
+  border: none;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.content .hrline {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+  margin: 0px 5px;
 }
 
 .content .legion {
   width: 100%;
-}
-
-.content .legion hr {
-  border: 0;
-  height: 1px;
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background: #FFFFFF;
 }
 
 .content .legion h3 {
@@ -408,8 +443,24 @@ footer h3 {
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  .content .home .welcome {
+    display: block;
+  }
+
+  .weldwn {
+    display: none;
+  }
 
   footer div p strong br {
     display: none;
+  }
+
+  .hide,
+  .hide .weldwn br {
+    display: none !important;
+  }
+
+  .hide2 {
+    display: block !important;
   }
 }
