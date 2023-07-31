@@ -259,6 +259,7 @@ li {
 .content .about .ap {
   font-size: 1.7rem;
   font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 1rem;
   margin: 0 1rem 1rem 1rem;
   border-bottom: 2px double #5D5D5D;

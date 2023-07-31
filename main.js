@@ -10,7 +10,7 @@ function myFunction() {
   preloader.style.display = 'none';
 };
 
-// Hamburger menu - mobile
+// Hamburger menu - mobile view
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
