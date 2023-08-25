@@ -63,7 +63,7 @@ li {
   position: fixed;
   width: 100%;
   height: 100vh;
-  z-index: 99999;
+  z-index: 2147483647;
   display: grid;
   place-items: center;
   background: #FFFFFF;
@@ -97,6 +97,7 @@ li {
   width: 100%;
   position: fixed;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 99999;
 }
 
 .header .navbar {
@@ -188,9 +189,7 @@ li {
 }
 
 /* content */
-.content {
-  text-align: center;
-}
+.content {}
 
 .content .home {
   background: url('home.jpg');
@@ -203,12 +202,13 @@ li {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  text-align: center;
 }
 
 .content .home .welcome {
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
-  padding: 4rem;
+  padding: 3rem;
   color: #FFFFFF;
   display: flex;
   justify-content: space-evenly;
@@ -249,53 +249,106 @@ li {
 }
 
 .content .about {
-  background: #FFFFFF;
-  padding: 2rem 0.2rem 0.2rem 0.2rem;
+  height: auto;
+  width: 100%;
 }
 
-.content .about .ah3 {
-  font-size: 3rem;
-  font-weight: thick;
+.content .about .abt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 7rem 0rem 7rem;
 }
 
-.content .about .ap {
-  font-size: 1.7rem;
+.content .about .abt .ah3 {
+  font-size: 4rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.content .about .abt .ap {
+  font-size: 2.4rem;
   font-style: italic;
-  padding: 1rem;
-  margin: 0 1rem 1rem 1rem;
-  border-bottom: 2px double #5D5D5D;
+  text-align: center;
+  font-weight: 500;
 }
 
-.content .about .aboutbox {}
+.content .about .divider {
+  margin: 0.7rem 4rem 1rem 4rem;
+  outline: none;
+  border: none;
+  height: 0.5rem;
+  border-radius: 2px;
+  background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+}
 
-.content .about .aboutbox img {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px, rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-  margin: 1.2rem;
-  border-radius: 5px;
-  width: 90%;
-  height: 50%;
+.content .about .aboutbox {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+
+.content .about .aboutbox .abtimg {
+  width: 100%;
+  height: auto;
+}
+
+.content .about .aboutbox .abtimg img {
+  width: 100%;
+  height: auto;
+  border: 0.5rem solid #101010;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
 .content .about .aboutbox .about-text {
-  margin: 0.7rem 1.5rem;
-  height: 50%;
-  overflow: scroll;
+  width: 100%;
+  height: 40rem;
+  overflow-y: scroll;
+  font-size: 1.9rem;
+  text-align: justify;
+  padding: 0rem 1rem 0rem 2rem;
 }
 
-.content .about .aboutbox .about-text .abp {
-  border: none;
-  font-size: 1.5rem;
+.content .about .aboutbox .about-text::-webkit-scrollbar {
+  width: auto;
+  background: transparent;
 }
 
-.content .hrline, .hrline {
-  border: 0;
+.content .about .aboutbox .about-text::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.content .about .aboutbox .about-text::-webkit-scrollbar-thumb {
+  background-color: #9e9e9e;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+.content .about .dividerin {
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
   height: 1px;
-  background: #333;
-  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
-  background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
-  background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
-  background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
-  margin: 0px 5px;
+  outline: none;
+  border: none;
+  margin: 0rem 7rem;
+  border-radius: 2px;
+}
+
+.content .about .systm {
+  width: 100%;
+  height: auto;
+}
+
+.content .about .sytm .sytmtit {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 3rem;
 }
 
 .content .hrlinemn {
