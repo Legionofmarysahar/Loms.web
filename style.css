@@ -189,7 +189,9 @@ li {
 }
 
 /* content */
-.content {}
+.content {
+  width: 100%;
+}
 
 .content .home {
   background: url('home.jpg');
