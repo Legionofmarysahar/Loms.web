@@ -162,12 +162,12 @@ li {
 }
 
 .header .navbar .nav-menu .nav-item .nav-link {
-  font-size: 1.7rem;
-  font-weight: 400;
+  font-size: 2rem;
   cursor: pointer;
   text-transform: uppercase;
-  font-weight: bolder;
   padding: 0.7rem;
+  font-family: monospace;
+  font-weight: bolder;
 }
 
 .header .navbar .nav-menu .nav-item .nav-link:hover {
@@ -336,7 +336,7 @@ li {
 
 .content .about .dividerin {
   background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
-  height: 1px;
+  height: 3px;
   outline: none;
   border: none;
   margin: 0rem 7rem;
@@ -434,6 +434,8 @@ li {
   border-top: 2px dashed #8c8b8b;
   width: 90%;
 }
+
+
 
 /* Footer */
 footer {
@@ -569,6 +571,86 @@ footer h3 {
 
   .weldwn {
     display: none;
+  }
+
+  .content .about {
+    height: auto;
+    width: 100%;
+  }
+
+  .content .about .abt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 2rem 7rem 0rem 7rem; */
+    width: 100%;
+    height: auto;
+  }
+
+  .content .about .abt .ah3 {
+    font-size: 4rem;
+    font-weight: bolder;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .content .about .abt .ap {
+    font-size: 2.4rem;
+    font-style: italic;
+    text-align: center;
+    font-weight: 500;
+    /* padding: 0rem 7rem 1rem 7rem; */
+  }
+
+  .content .about .aboutbox {
+    height: auto;
+    width: 100%;
+    display: flex;
+    padding: 1rem 2rem 3rem 2rem;
+    flex-direction: column;
+  }
+
+  .content .about .aboutbox .abtimg {
+    width: 100%;
+    height: auto;
+    padding: 0rem 0rem 2rem 0rem;
+  }
+
+  .content .about .aboutbox .about-text {
+    width: 100%;
+    height: 40rem;
+    overflow-y: scroll;
+    font-size: 1.9rem;
+    text-align: justify;
+    padding: 0rem 0rem 0rem 1rem;
+    font-family: monospace;
+  }
+
+  .content .about .sytm {
+    padding: 1rem 2rem 0rem 2rem;
+  }
+
+  .content .about .sytm .sytmtit {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0rem 4rem 0.5rem 4rem;
+  }
+
+  .content .about .sytm .sytmlist {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content .about .sytm .sytmlist .cell {
+    width: 100%;
+    height: auto;
+    padding: 0.7rem 0rem 3rem 0rem;
+    font-family: monospace;
   }
 
   footer div p strong br {
