@@ -384,7 +384,8 @@ li {
   font-weight: 400;
 }
 
-.content .about .sytm .sytmlist .cell .off, .content .about .sytm .sytmlist .cell .more {
+.content .about .sytm .sytmlist .cell .off,
+.content .about .sytm .sytmlist .cell .more {
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -449,7 +450,7 @@ li {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 3rem;  
+  padding: 3rem;
 }
 
 .content .legion .legcon .legbox2 .legboxtit2 {
@@ -474,12 +475,21 @@ li {
   height: 35rem;
 }
 
-.content .legion .legcon .legbox2  .legboxin2 .legboxtext2 {
+.content .legion .legcon .legbox2 .legboxin2 .legboxtext2 p {
   width: 100%;
   font-size: 1.9rem;
   text-align: justify;
   padding: 2rem;
   font-family: monospace;
+}
+
+.content .legion .legcon .legbox2 .legboxin2 .legboxtext2 .legdvd {
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+  height: 3px;
+  outline: none;
+  border: none;
+  margin: 3rem 7rem;
+  border-radius: 2px;
 }
 
 .content .legion .legcon .legdvd {
@@ -494,8 +504,9 @@ li {
 .content .legion .legcon .legbox .legboxtit {
   font-size: 3.5rem;
   font-weight: bold;
-  text-align: justify;
-  list-style: square;
+  text-align: center;
+  /* margin: 2rem; */
+  /* list-style: square; */
 }
 
 .content .legion .legcon .legbox .legboxin {
@@ -506,42 +517,104 @@ li {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
-  align-items: center;
+  /* align-items: center; */
+  width: 100%;
+  height: auto;
+  /* direction: rtl; */
 }
 
 .content .legion .legcon .legbox .legboxin .legboximg {
-  width: 100%;
-  height: auto;
+  /* width: 100%; */
+  /* height: auto; */
 }
 
 .content .legion .legcon .legbox .legboxin .legboximg img {
-  width: 100%;
-  height: auto;
-  border: 0.5rem solid #101010;
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  /* width: 100%; */
+  /* height: auto; */
+  /* border: 0.5rem solid #101010; */
+  /* border-radius: 8px; */
+  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px; */
 }
 
-.content .legion .legcon .legbox .legboxin .legboxtext {
-  width: 100%;
-  height: 45.5rem;
+.content .legion .legcon .legbox .legboxin .legboxtt .legboxtext {
+  /* width: 100%; */
+  height: 52rem;
   overflow-y: scroll;
   font-size: 1.9rem;
   text-align: justify;
   padding: 0rem 1rem 0rem 2rem;
   font-family: monospace;
+  direction: ltr;
+  transform: scaleX(-1);
 }
 
-.content .legion .legcon .legbox .legboxin .legboxtext::-webkit-scrollbar {
+.content .legion .legcon .legbox .legboxin .legboxtt .legboxtext p {
+  transform: scaleX(-1);
+}
+
+.content .legion .legcon .legbox .legboxin .legboxtt .legboxtext::-webkit-scrollbar {
   width: auto;
   background: transparent;
 }
 
-.content .legion .legcon .legbox .legboxin .legboxtext::-webkit-scrollbar-thumb {
+.content .legion .legcon .legbox .legboxin .legboxtt .legboxtext::-webkit-scrollbar-thumb {
   background-color: #9e9e9e;
   border-radius: 20px;
   border: 6px solid transparent;
   background-clip: content-box;
+}
+
+.content .legion .legcon .legbox .legboxin .legboxtt .forhr .legdvd2 {
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+  height: 3px;
+  outline: none;
+  border: none;
+  margin: 3rem 7rem;
+  border-radius: 2px;
+}
+
+.content .legion .legcon .lom {
+  width: 100%;
+}
+
+.content .legion .legcon .lom .lomhead {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content .legion .legcon .lom .lomcon {
+  width: 80%;
+  font-size: 1.9rem;
+  text-align: center;
+  font-family: monospace;
+  height: 65rem;
+  overflow-x: hidden;
+  margin: auto;
+  padding: 0rem 1rem;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.content .legion .legcon .lom .lomcon::-webkit-scrollbar {
+  width: auto;
+  background: transparent;
+}
+
+.content .legion .legcon .lom .lomcon::-webkit-scrollbar-thumb {
+  background-color: #9e9e9e;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+.content .legion .legcon .lom .lomhr {
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+  height: 3px;
+  outline: none;
+  border: none;
+  margin: 3rem 7rem;
+  border-radius: 2px;
 }
 
 /* Footer */
