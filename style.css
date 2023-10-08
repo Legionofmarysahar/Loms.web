@@ -420,7 +420,8 @@ li {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 7rem 0rem 7rem;
+  /* padding: 2rem 7rem 0rem 7rem; */
+  margin: 2rem 7rem 0rem 7rem;
 }
 
 .content .legion .leghead h3 {
@@ -841,6 +842,7 @@ footer h3 {
     justify-content: space-between;
     align-items: center;
     /* padding: 2rem 7rem 0rem 7rem; */
+    margin: 0rem;
   }
 
   .content .legion .leghead h3 {
@@ -892,6 +894,7 @@ footer h3 {
   height: auto;
   /* direction: rtl; */
 }
+
 /* .content .legion .legcon .legbox .legboxin { */
   /* margin-top: 1rem; */
 /* } */
