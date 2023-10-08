@@ -586,7 +586,7 @@ li {
 .content .legion .legcon .lom .lomcon {
   width: 80%;
   font-size: 1.9rem;
-  text-align: center;
+  text-align: justify;
   font-family: monospace;
   height: 65rem;
   overflow-x: hidden;
