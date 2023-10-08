@@ -523,18 +523,18 @@ li {
   /* direction: rtl; */
 }
 
-.content .legion .legcon .legbox .legboxin .legboximg {
-  /* width: 100%; */
-  /* height: auto; */
-}
+/* .content .legion .legcon .legbox .legboxin .legboximg { */
+/* width: 100%; */
+/* height: auto; */
+/* } */
 
-.content .legion .legcon .legbox .legboxin .legboximg img {
-  /* width: 100%; */
-  /* height: auto; */
-  /* border: 0.5rem solid #101010; */
-  /* border-radius: 8px; */
-  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px; */
-}
+/* .content .legion .legcon .legbox .legboxin .legboximg img { */
+/* width: 100%; */
+/* height: auto; */
+/* border: 0.5rem solid #101010; */
+/* border-radius: 8px; */
+/* box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px; */
+/* } */
 
 .content .legion .legcon .legbox .legboxin .legboxtt .legboxtext {
   /* width: 100%; */
@@ -834,6 +834,88 @@ footer h3 {
     font-family: monospace;
     margin: 0rem;
   }
+
+  .content .legion .leghead {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 2rem 7rem 0rem 7rem; */
+  }
+
+  .content .legion .leghead h3 {
+    font-size: 3.4rem;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem 0rem;
+    border-top: 5px double #0f0f0f0e;
+  }
+
+  .content .legion .legcon {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 3rem; */
+  }
+
+  .content .legion .legcon .legbox2 .legboxtit2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+    padding: 1rem 0rem;
+}
+
+.content .legion .legcon .legbox2 .legboxin2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content .legion .legcon .legbox .legboxtit {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  /* margin: 2rem; */
+  /* list-style: square; */
+}
+
+.content .legion .legcon .legbox .legboxin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  width: 100%;
+  height: auto;
+  /* direction: rtl; */
+}
+/* .content .legion .legcon .legbox .legboxin { */
+  /* margin-top: 1rem; */
+/* } */
+
+.content .legion .legcon .legbox .legboxin .legboximg img {
+  width: 100%;
+  /* height: auto; */
+  /* border: 0.5rem solid #101010; */
+  /* border-radius: 8px; */
+  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px; */
+}
+
+.content .legion .legcon .lom .lomcon {
+  width: 95%;
+  font-size: 1.9rem;
+  text-align: justify;
+  font-family: monospace;
+  height: 65rem;
+  overflow: scroll;
+  margin: auto;
+  padding: 0rem 1rem;
+  margin-bottom: 2%;
+  margin-top: 5%;
+}
 
   footer div p strong br {
     display: none;
