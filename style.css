@@ -202,7 +202,7 @@ li {
   height: 85rem;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -219,7 +219,7 @@ li {
   background: rgba(0, 0, 0, 0.7);
   /* background: linear-gradient(to bottom, transparent 0%, black 100%); */
   width: 100%;
-  padding: 3rem 0rem 7rem 0rem;
+  padding: 2rem 3rem 7rem 3rem;
   color: #FFFFFF;
   display: flex;
   justify-content: space-evenly;
@@ -827,11 +827,11 @@ footer h3 {
 
   .content .home {
     height: 70rem;
-    padding-bottom: 0rem;
   }
 
   .content .home .welcome {
     display: block;
+    padding-bottom: 3rem;
   }
 
   .weldwn {
