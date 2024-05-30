@@ -1111,3 +1111,16 @@ footer h3 {
     display: block !important;
   }
 }
+
+.notice {
+  font-weight: bolder;
+    text-align: center;
+    margin: 2rem 8rem;
+    padding: 5rem;
+  background-color: #FFFFFF;
+  font-size: 5rem;
+  border-radius: 20px;
+  box-shadow:
+      0 10px 27px rgba(0, 0, 0, 0.05);
+      border: #000000 solid 2px;
+}
